@@ -1,15 +1,15 @@
 /target:library
 /nowarn:0169
 /nowarn:0649
-/out:"Temp/Unity.Rider.Editor.dll"
+/out:"Temp/Boxophobic.PolyverseSkies.Editor.dll"
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
-/reference:"Library/ScriptAssemblies/UnityEditor.TestRunner.dll"
-/reference:"Library/ScriptAssemblies/UnityEditor.UI.dll"
-/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
+/reference:"Library/ScriptAssemblies/Boxophobic.Utils.Editor.dll"
+/reference:"Library/ScriptAssemblies/Boxophobic.Utils.Scripts.dll"
+/reference:"Library/ScriptAssemblies/Boxophobic.PolyverseSkies.Runtime.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -71,11 +71,16 @@
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEditor.dll"
+/reference:"Library/ScriptAssemblies/UnityEditor.UI.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
+/reference:"Library/ScriptAssemblies/UnityEditor.TestRunner.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.TestRunner.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll"
+/reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
 /reference:"Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll"
-/reference:"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+/reference:"/Users/rohansurana/Desktop/test3d/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll"
@@ -291,27 +296,9 @@
 /define:ENABLE_TIMELINE
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:UNITY_POST_PROCESSING_STACK_V2
-/define:TEST_FRAMEWORK
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/Discovery.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/EditorPluginInterop.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/LoggingLevel.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/PluginSettings.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/PostProcessors/RiderAssetPostprocessor.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/ProjectGeneration/FileIOProvider.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/ProjectGeneration/GUIDProvider.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/ProjectGeneration/ProjectGeneration.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderInitializer.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderScriptEditor.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderScriptEditorData.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/UnitTesting/CallbackData.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/UnitTesting/CallbackInitializer.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/UnitTesting/RiderTestRunner.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/UnitTesting/TestEvent.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/UnitTesting/TestsCallback.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/Util/CommandLineParser.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/Util/FileSystemUtil.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/Util/LibcNativeInterop.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/Util/RiderMenu.cs"
-"/Users/rasfmar/sdhacks/grosseries/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/Util/UnityUtils.cs"
+"Assets/BOXOPHOBIC/Polyverse Skies/Core/Editor/PolyverseSkiesCreate.cs"
+"Assets/BOXOPHOBIC/Polyverse Skies/Core/Editor/PolyverseSkiesHub.cs"
+"Assets/BOXOPHOBIC/Polyverse Skies/Core/Editor/PolyverseSkiesShaderGUI.cs"
+"Assets/BOXOPHOBIC/Polyverse Skies/Core/Editor/PolyverseSkiesWindows.cs"

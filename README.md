@@ -1,6 +1,6 @@
 ![Grosseries](grosseries.png)
 
-###Note: the pitch video with demo show a viewpoint far from the lake, to see changes that occur to the lake, check out the Project Media photos.
+### Note: the pitch video with demo show a viewpoint far from the lake, to see changes that occur to the lake, check out the Project Media photos.
 
 ## Try it out yourself! 
 **On Unity Editor - Build and Run it!: ** [https://github.com/alvinwang922/grosseries](https://github.com/alvinwang922/grosseries)

@@ -5,17 +5,37 @@ using UnityEngine;
 public class changeSkybox : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Material transitionMaterial;
-    private Material initSkybox;
+    private Material safeKeeping;
+
+    public IEnumerator sky(Material transitionMaterial, float duration, float cap) {
+        Material orig = new Material(RenderSettings.skybox);
+        orig.Lerp(orig, transitionMaterial, cap);
+
+        float elapsedTime = 0.0f;
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            RenderSettings.skybox.Lerp(
+                RenderSettings.skybox, orig,
+                Mathf.Clamp01(elapsedTime / duration)
+            );
+            DynamicGI.UpdateEnvironment();
+            yield return new WaitForEndOfFrame();
+        }
+    }
 
     void Start()
     {
-        initSkybox = new Material(RenderSettings.skybox);
+        safeKeeping = new Material(RenderSettings.skybox);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        // RenderSettings.skybox.Lerp(initSkybox, transitionMaterial, Time.deltaTime);
+    void OnDisable() {
+        RenderSettings.skybox = safeKeeping;
+        DynamicGI.UpdateEnvironment();
+    }
+
+    void OnDestroy() {
+        RenderSettings.skybox = safeKeeping;
+        DynamicGI.UpdateEnvironment();
     }
 }

@@ -9,7 +9,7 @@ public class deteriorate : MonoBehaviour
         float goDownThisMuch,
         float speed,
         int level,
-        float colOffset
+        float colorShift
     ) {
         Vector3 initPos = obj.transform.position;
         Vector3 goPos = initPos + new Vector3(0.0f, -goDownThisMuch, 0.0f);
@@ -21,9 +21,9 @@ public class deteriorate : MonoBehaviour
             rend.material.color,
             new Color(152.0f/255,169.0f/255,128.0f/255, 1),
             new Color(75.0f/255, 82.0f/255, 40.0f/255, 1),
-            new Color(75.0f/255, 82.0f/255, 40.0f/255, 0)
+            new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, 0f)
         };
-        Color col = cols[level] * (level > 0 ? colOffset : 1.0f);
+        Color col = cols[level] * colorShift;
 
         if (level == 3) {
             rend.material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
@@ -38,6 +38,37 @@ public class deteriorate : MonoBehaviour
         while (Vector3.Distance(obj.transform.position, goPos) > 0.01f) {
             obj.transform.position = Vector3.Lerp(obj.transform.position, goPos, Time.deltaTime * speed);
             rend.material.color = Color.Lerp(rend.material.color, col, Time.deltaTime * speed);
+            yield return new WaitForEndOfFrame();
+        }
+    }
+
+    public IEnumerator Heal(
+        GameObject obj,
+        float goUpThisMuch,
+        float speed,
+        Color healColor
+    ) {
+        Vector3 initPos = obj.transform.position;
+        Vector3 goPos = initPos + new Vector3(0.0f, goUpThisMuch, 0.0f);
+        obj.tag = "Level0";
+
+        Renderer rend = obj.GetComponent<Renderer>();
+
+        if (healColor.a < 1.0f) {
+            rend.material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+            rend.material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+            rend.material.SetInt("_ZWrite", 0);
+            rend.material.DisableKeyword("_ALPHATEST_ON");
+            rend.material.EnableKeyword("_ALPHABLEND_ON");
+            rend.material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+            rend.material.renderQueue = 3000;
+        }
+
+        while (Vector3.Distance(obj.transform.position, goPos) > 0.01f) {
+            obj.transform.position = Vector3.Lerp(obj.transform.position, goPos, Time.deltaTime * speed);
+            if (healColor.a > 0.01f) {
+                rend.material.color = Color.Lerp(rend.material.color, healColor, Time.deltaTime * speed);
+            }
             yield return new WaitForEndOfFrame();
         }
     }

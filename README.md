@@ -1,4 +1,4 @@
-# Grosseries
+![Grosseries](grosseries.png)
 
 ## Try it out yourself! 
 **On Unity Editor - Build and Run it!: ** [https://github.com/alvinwang922/grosseries](https://github.com/alvinwang922/grosseries)

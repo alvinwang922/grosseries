@@ -1,17 +1,26 @@
 ![Grosseries](grosseries.png)
 
+###Note: the pitch video with demo show a viewpoint far from the lake, to see changes that occur to the lake, check out the Project Media photos.
+
 ## Try it out yourself! 
 **On Unity Editor - Build and Run it!: ** [https://github.com/alvinwang922/grosseries](https://github.com/alvinwang922/grosseries)
 
 ## Inspiration
 Grosseries mission is to educate **everyday shoppers** about how their purchase **choices** can **impact** the environment around them. We aim to improve outcomes in **sustainability** awareness in a public desensitized from statistics, news, and even infographics.
 
-_How we do so, Grosseries:_
+Imagine if you are an Indonesian local, living in a rural community and making a living growing crops to feed livestock. Every year you slash and burn (set fire to peatland and forests to make new fertile soil for farming). This causes haze, pollution from burning that chokes your children and you – leading to long-term negative health impacts.
+
+But you can’t stop this practice; decades of unsustainable practice and sustained foreign demand for certain livestock and meat products mean that this is what you need to do to survive. As you choke on smoke, you know you’re damaging your environment.
+
+Grosseries **show** how ‘gross’ and disturbing the impact of a shopper’s actions are on the environment. It gives an experience that most city-dwellers would never encounter.
+
+How we do so, Grosseries:
+
 **1. Immersive VR Experience**: Designed with minimal features that would interrupt the experience, it immerses you in a Virtual Reality Experience through an Oculus Quest headset and controllers.
 
 **2. Show over Tell**: Bombarding the public with climate change statistics and the news isn’t effective. Learn the impact of your irreversible choices as the sustainability message is conveyed without any words, numbers, or voices.
 
-**3. Scaled and Responsive Environment Changes**: Items chosen for purchase by you cause changes to Nature around you. The real-life impact of buying one barrel of car fuel is magnified to model the impact of your long-term shopper choices.
+**3. Scaled and Responsive Environment Changes**: Items chosen for purchase by you cause changes to Nature around you. The real-life impact of buying one leaflet of paper is magnified to model the impact of your long-term shopper choices. #GoDigital
 
 ## What it does
 
@@ -19,11 +28,15 @@ _How we do so, Grosseries:_
 VR is the future of marketing and engagement. Using it today is **powerful**, as it is a new medium the public is rarely exposed to. On the other hand – statistics, infographics, news media are common. And even if someone sees a shocking fact about how acres of forest fire destroyed or hear how this was the hottest recorded summer in the last 30 years – no action is taken. 
 We, the public, are desensitized.
 
-__Imagine if you are an Indonesian local, living in a rural community and making a living growing crops to feed livestock. Every year you slash and burn (set fire to peatland and forests to make new fertile soil for farming). This causes haze, pollution from burning that chokes your children and you – leading to long-term negative health impacts.
+**2. Show over Tell**
+Changes happen when items enter the shopping cart:
+- For meat: look at the water, it recedes a bit to show how much water is inefficiently used to produce meat.
+- For plastic: look at the water again, because trash is gonna wash up on shore.
+- For paper: look at the trees, because they will be felled.
+Rather than 
 
-But you can’t stop this practice; decades of unsustainable practice and sustained foreign demand for certain livestock and meat products mean that this is what you need to do to survive. As you choke on smoke, you know you’re damaging your environment.
-
-Grosseries **show** how ‘gross’ and disturbing the impact of a shopper’s actions are on the environment.
+**3. Scaled and Responsive Environment Changes**
+Items chosen for purchase by you cause changes to Nature around you. The real-life impact of buying one leaflet of paper is magnified to model the impact of your long-term shopper choices. #GoDigital
 
 ## How we built it
 The basis of our platform is the Unity 3D development platform. We coded in C# and designed. We designed prototypes of our platform using Adobe XD in order to organize our thoughts before beginning the project itself. We integrated the Oculus Rift SDK into our Unity platform to provide the rich experience of a fully immersive environment using virtual reality.

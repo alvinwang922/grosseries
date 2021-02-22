@@ -4,7 +4,9 @@
 
 ## Try it out yourself! 
 **On Unity Editor - Build and Run it!: ** [https://github.com/alvinwang922/grosseries](https://github.com/alvinwang922/grosseries) Open entire repository as a Project and Build & Run from there.
+
 or
+
 **Upload to Oculus headset (Quest tested, others untested), via VR-Sideloader [https://headjack.io/tutorial/sideload-install-app-apk-oculus-go-quest/](https://headjack.io/tutorial/sideload-install-app-apk-oculus-go-quest/) upload the APK file to your headset and run it.
 
 ## Inspiration

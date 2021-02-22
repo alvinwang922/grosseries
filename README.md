@@ -3,7 +3,9 @@
 ### Note: the pitch video with demo show a viewpoint far from the lake, to see changes that occur to the lake, check out the Project Media photos.
 
 ## Try it out yourself! 
-**On Unity Editor - Build and Run it!: ** [https://github.com/alvinwang922/grosseries](https://github.com/alvinwang922/grosseries)
+**On Unity Editor - Build and Run it!: ** [https://github.com/alvinwang922/grosseries](https://github.com/alvinwang922/grosseries) Open entire repository as a Project and Build & Run from there.
+or
+**Upload to Oculus headset (Quest tested, others untested), via VR-Sideloader [https://headjack.io/tutorial/sideload-install-app-apk-oculus-go-quest/](https://headjack.io/tutorial/sideload-install-app-apk-oculus-go-quest/) upload the APK file to your headset and run it.
 
 ## Inspiration
 Grosseries mission is to educate **everyday shoppers** about how their purchase **choices** can **impact** the environment around them. We aim to improve outcomes in **sustainability** awareness in a public desensitized from statistics, news, and even infographics.
